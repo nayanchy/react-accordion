@@ -11,7 +11,7 @@ const Item = ({ item, number, getClickedID, isOpen }) => {
     >
       <span className="number">{number < 10 ? `0${number}` : number}</span>
       <span className="title">{item.title}</span>
-      <span className="icon"></span>
+      <span className="icon">{isOpen ? "-" : "+"}</span>
       {isOpen && <div className="content-box">{item.text}</div>}
     </div>
   );
